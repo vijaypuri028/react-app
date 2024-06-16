@@ -1,13 +1,145 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* futter page */
+.social-media i {
+  background-color: #040001;
+  padding: 7px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  font-size: 25px;
+}
+.social-media i:hover {
+  background-color: #342a2a;
+  font-size: 25px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.futter-content-text{
+  width: 35%;
 }
+.footer-link{
+  text-decoration: none;
+}
+
+.futter-content-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.all-futter-content{
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 100px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+
+/* about */
+
+.background-image{
+  background: url('./Image/pexels-karolina-grabowska-5625071.jpg');
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.inner-back-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.inner-back-text h1{
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 5rem;
+  text-transform: uppercase;
+}
+.inner-back-text h1 span{
+  color: var(--mainclr);
+  text-transform: uppercase;
+}
+.inner-back-text p{
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  padding: 1rem;
+ 
+}
+.inner-back-btn{
+  display: flex;
+  justify-content: center;
+ 
+}
+
+
+/* service */
+
+
+.our-services{
+  padding: 5rem 7%;
+}
+.our-services h1{
+  color: var(--headerclr);
+  /* font-size: 40px; */
+  text-align: center;
+  padding: 1rem 0;
+}
+.our-services h1 span{
+  color: var(--mainclr);
+}
+.main-service{
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* gap: 15px; */
+}
+.inner-service{
+  flex: 1 1 300px;
+}
+.inner-service h2{
+  /* padding: 1rem 0; */
+  font-size: 2rem;
+}
+.inner-service p{
+  /* font-size: 1.5rem; */
+  margin-bottom: 25px;
+}
+
+
+.our-gallery{
+  padding: 4rem 7%;
+}
+.our-gallery h1{
+  color: var(--headerclr);
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.our-gallery h1 span{
+  color: var(--mainclr);
+}
+.main-gallery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.inner-gallery{
+  flex: 1 1 300px;
+}
+.inner-gallery img{
+  width: 100%;
+  height: 300px;
+  transition: .5s;
+}
+.inner-gallery img:hover{
+  transform: translateY(-25px);
+}
+
